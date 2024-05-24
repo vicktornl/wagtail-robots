@@ -16,3 +16,6 @@ tox-52:
 
 tox-60:
 	tox -e py38-dj42-wt60
+
+tox-61:
+	tox -e py38-dj42-wt61
