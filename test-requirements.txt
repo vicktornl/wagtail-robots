@@ -1,5 +1,5 @@
-flake8>=3.0.4
-sphinx!=1.6.1,>=1.5.1
-sphinx-rtd-theme>=0.2.4
+flake8>=5.0.4
+sphinx>=7.1.2
+sphinx-rtd-theme>=2.0.0
 doc8
-setuptools==69.1.1
+setuptools==70.0.0

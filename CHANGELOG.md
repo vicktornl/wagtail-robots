@@ -2,7 +2,8 @@
 
 ## Unreleased
 
-- Add Wagtail 6.0 to test matrices
+- Add Wagtail 6 to test matrices
+- Drop support for Django < 4.2
 
 ## 1.1.0+tbx (2024-03-05)
 
