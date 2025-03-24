@@ -1,4 +1,4 @@
-import django
+from six import u
 
 from django.db import models
 from django.utils.text import get_text_list
@@ -13,7 +13,6 @@ from robots.panels import WrappedInlinepanel
 from wagtail.models import Site
 from wagtail.admin.panels import FieldPanel
 
-from six import u
 
 class BaseUrl(models.Model):
     """

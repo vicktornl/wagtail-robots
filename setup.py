@@ -28,6 +28,7 @@ setup(
     install_requires=[
         'wagtail>=5.2',
         'wagtail-modeladmin>=2.1',
+        'six>=1.17.0',
     ],
     extras_require={"testing": testing_extras},
     classifiers=[
