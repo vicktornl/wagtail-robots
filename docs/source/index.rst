@@ -2,6 +2,10 @@
 Wagtail Robots
 ==============
 
+These docs are only relevant if using the latest version available on Pypi.
+
+If you are using the Torchbox fork, please refer to the README.rst file in the root of the repository.
+
 This is a basic Django application for Wagtail to manage robots.txt files
 following the `robots exclusion protocol`_, complementing the Django_
 `Sitemap contrib app`_.
