@@ -96,7 +96,7 @@ Initialization
 To activate robots.txt generation on your Wagtail site, add this line to your
 URLconf_::
 
-   url(r'^robots\.txt', include('robots.urls')),
+   re_path(r'^robots\.txt', include('robots.urls')),
 
 This tells Django to build a robots.txt when a robot accesses ``/robots.txt``.
 Then, please migrate your database to create the necessary tables and create
