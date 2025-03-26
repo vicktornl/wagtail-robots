@@ -11,15 +11,11 @@ user:
 migrate:
 	@python testmanage.py migrate
 
-tox-215:
-	tox -e py38-dj32-wt215
+tox-52:
+	tox -e python3.9-django4.2-wagtail5.2
 
-tox-216:
-	tox -e py38-dj32-wt216
+tox-63:
+	tox -e python3.10-django5.0-wagtail6.3
 
-tox-3:
-	tox -e py38-dj40-wt30
-
-tox-4:
-	tox -e py38-dj40-wt40
-	tox -e py38-dj41-wt41
+tox-64:
+	tox -e python3.13-django5.1-wagtail6.4

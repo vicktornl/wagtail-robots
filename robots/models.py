@@ -1,4 +1,4 @@
-import django
+from six import u
 
 from django.db import models
 from django.utils.text import get_text_list
@@ -9,18 +9,9 @@ from modelcluster.fields import ParentalKey
 
 from robots.panels import WrappedInlinepanel
 
-from wagtail import VERSION as WAGTAIL_VERSION
-if WAGTAIL_VERSION >= (3, 0):
-    from wagtail.models import Site
-    from wagtail.admin.panels import FieldPanel
-else:
-    from wagtail.core.models import Site
-    from wagtail.admin.edit_handlers import FieldPanel
 
-if django.VERSION >= (3, 0):
-    from six import u
-else:
-    from django.utils.six import u
+from wagtail.models import Site
+from wagtail.admin.panels import FieldPanel
 
 
 class BaseUrl(models.Model):

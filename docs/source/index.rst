@@ -2,6 +2,10 @@
 Wagtail Robots
 ==============
 
+These docs are only relevant if using the latest version available on Pypi.
+
+If you are using the Torchbox fork, please refer to the README.rst file in the root of the repository.
+
 This is a basic Django application for Wagtail to manage robots.txt files
 following the `robots exclusion protocol`_, complementing the Django_
 `Sitemap contrib app`_.
@@ -37,7 +41,7 @@ Or get the source from the application site at::
 
 Then follow these steps:
 
-1. Add ``'wagtail.contrib.modeladmin'`` and ``'robots'`` to your INSTALLED_APPS_ setting.
+1. Add ``'wagtail_modeladmin'`` and ``'robots'`` to your INSTALLED_APPS_ setting.
 2. Run the ``migrate`` management command
 
 You may want to additionally setup the `Wagtail sitemap generator`_.

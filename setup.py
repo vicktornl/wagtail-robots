@@ -4,6 +4,12 @@ from setuptools import setup, find_packages
 with open('README.rst') as file:
     long_description = file.read()
 
+testing_extras = [
+    "flake8>=3.0.4",
+    "sphinx!=1.6.1,>=1.5.1",
+    "sphinx-rtd-theme>=0.2.4",
+    "doc8",
+]
 
 setup(
     name='wagtail-robots',
@@ -20,8 +26,11 @@ setup(
         ],
     },
     install_requires=[
-        'wagtail>=2.15',
+        'wagtail>=5.2',
+        'wagtail-modeladmin>=2.1',
+        'six>=1.17.0',
     ],
+    extras_require={"testing": testing_extras},
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
@@ -33,16 +42,14 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Software Development',
         'Topic :: Software Development :: Libraries :: Application Frameworks',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
         'Framework :: Django',
-        'Framework :: Django :: 3.2',
-        'Framework :: Django :: 4.0',
-        'Framework :: Django :: 4.1',
-        'Framework :: Wagtail :: 2',
-        'Framework :: Wagtail :: 3',
-        'Framework :: Wagtail :: 4',
+        'Framework :: Django :: 4.2',
+        'Framework :: Wagtail :: 5',
+        'Framework :: Wagtail :: 6',
     ]
 )

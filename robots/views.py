@@ -6,16 +6,10 @@ from django.views.generic import ListView
 from robots import settings
 from robots.models import Rule
 
-if django.VERSION[:2] >= (2, 0):
-    from django.urls import NoReverseMatch, reverse
-else:
-    from django.core.urlresolvers import NoReverseMatch, reverse
 
-from wagtail import VERSION as WAGTAIL_VERSION # noqa
-if WAGTAIL_VERSION >= (3, 0):
-    from wagtail.models import Site
-else:
-    from wagtail.core.models import Site
+from django.urls import NoReverseMatch, reverse
+
+from wagtail.models import Site
 
 from wagtail.contrib.sitemaps.views import sitemap
 
