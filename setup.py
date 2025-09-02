@@ -6,7 +6,7 @@ with open('README.rst') as file:
 
 testing_extras = [
     "flake8>=7.3.0",
-    "sphinx>=8.2.3",
+    "sphinx>=7.4.7",
     "sphinx-rtd-theme>=3.0.2",
     "doc8",
 ]
