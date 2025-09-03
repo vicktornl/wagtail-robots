@@ -29,6 +29,7 @@ setup(
         'wagtail>=6.3',
         'wagtail-modeladmin>=2.2',
         'six>=1.17.0',
+        'packaging>=25.0',
     ],
     extras_require={"testing": testing_extras},
     classifiers=[
